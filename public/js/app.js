@@ -1,19 +1,6 @@
 //console.log('Client side java script is loaded here')
 
-// fetch('http://localhost:3000/weather?address=Badlpaur').then((response)=>{
-//     response.json().then((data)=>{
-//         if(data.error){
-//             console.log(data.error)
-//         }
-//         else{
-//             console.log(data.location)
-//             console.log(data.forecast)
 
-//         }
-        
-//     })
-
-// })
 
 const weatherForm = document.querySelector('form')
 const pincodeForm = document.querySelector('form')
@@ -26,7 +13,8 @@ const messageFour = document.querySelector('#message-4')
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
     const location = search.value
-    const url = 'http://localhost:3000/weather?address='+location
+    //const url_local = 'http://localhost:3000/weather?address='+location
+    const url = '/weather?address='+location
    // console.log(url)
     messageOne.textContent = 'Loading.....'
     messageTwo.textContent = ''
