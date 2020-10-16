@@ -1,4 +1,4 @@
-console.log('Client side java script is loaded here')
+//console.log('Client side java script is loaded here')
 
 // fetch('http://localhost:3000/weather?address=Badlpaur').then((response)=>{
 //     response.json().then((data)=>{
