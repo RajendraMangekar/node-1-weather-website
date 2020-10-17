@@ -83,6 +83,7 @@ app.get('/weather',(req,res)=>{
                 res.send({
                     forecast : forecastdata,
                     location,
+                    //humidity : data.humidity,
                     address : req.query.address
 
 
@@ -125,5 +126,5 @@ app.get('*',(req,res)=>{
 // })
 
 app.listen(port,()=>{
-    console.log('server is up at port '+ port)
+    console.log('server is up at port '+port)
 })

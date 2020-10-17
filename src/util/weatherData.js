@@ -21,8 +21,15 @@ const weatherData = (latitude, longitude, callback)=>{
         }else{
             
             
-            callback(undefined,body.current.temperature)
+            callback(undefined, body.current.temperature+'°C' +' & humidity is ' + body.current.humidity +'%'
+                
+                //humidity :body.current.humidity
+            )
+            //callback(undefined,body.current.weather_descriptions)
+            //callback(undefined,body.current.humidity)
+            //console.log('humidity is '+body.current.humidity)
             //console.log(undefined,body.current.temperature)
+            //console.log('humidity is ' + body.current.humidity)
 
         }
         
